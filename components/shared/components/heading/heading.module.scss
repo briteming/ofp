@@ -1,7 +1,7 @@
 @import 'common';
 
 .primary {
-  font-family: 'GreyCliff' !important;
+  font-family: 'Inter' !important;
   font-weight: bold;
   font-style: normal !important;
   font-size: 5rem;
@@ -34,7 +34,7 @@
 
   &::before {
     content: attr(data-before-content);
-    font-family: 'Criteria';
+    font-family: 'Inter';
     font-weight: bold;
     font-style: oblique;
     font-size: clamp(10rem, 28vw, 31rem);
@@ -58,7 +58,7 @@
 }
 
 .secondary {
-  font-family: 'GreyCliff' !important;
+  font-family: 'Inter' !important;
   font-weight: bold;
   font-style: normal !important;
   color: var(--white);
@@ -95,7 +95,7 @@
 
   &::before {
     content: attr(data-before-content);
-    font-family: 'Criteria';
+    font-family: 'Inter';
     font-weight: bold;
     font-style: oblique;
     font-size: clamp(10rem, 28vw, 31rem);
@@ -121,7 +121,7 @@
 
 .tertiary {
   font-size: 1.6rem;
-  font-family: 'GreyCliff';
+  font-family: 'Inter';
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;

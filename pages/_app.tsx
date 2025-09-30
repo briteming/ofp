@@ -7,7 +7,6 @@ import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
 import '../styles/main.scss';
 import * as gtag from '../lib/gtag';
-import { loadFonts } from '../lib/fonts';
 import { HeaderProvider } from '../components/shared/context/HeaderContext';
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -20,8 +19,6 @@ if (!isProduction && isBrowser) {
 }
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  loadFonts();
-
   useEffect(() => {
     if (isProduction && isBrowser) {
       const handleRouteChange = (url: string) => {
